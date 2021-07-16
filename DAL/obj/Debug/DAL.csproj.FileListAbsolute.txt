@@ -1,0 +1,6 @@
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\DAL\bin\Debug\DAL.dll
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\DAL\bin\Debug\DAL.pdb
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\DAL\obj\Debug\DAL.dll
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\DAL\obj\Debug\DAL.pdb
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\DAL\bin\Debug\DAL.dll.config
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
