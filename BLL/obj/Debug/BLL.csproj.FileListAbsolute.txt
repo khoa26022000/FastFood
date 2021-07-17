@@ -1,6 +1,0 @@
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\BLL\bin\Debug\BLL.dll
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\BLL\bin\Debug\BLL.pdb
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\BLL\obj\Debug\BLL.dll
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\BLL\obj\Debug\BLL.pdb
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\BLL\bin\Debug\DAL.dll
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\BLL\bin\Debug\DAL.pdb

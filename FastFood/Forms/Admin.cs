@@ -6,13 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using BLL;
+using DAL;
 
 namespace FastFood.Forms
 {
     public partial class Admin : Form
     {
-        GetDataBLL getDataBLL = new GetDataBLL();
         public Admin()
         {
             InitializeComponent();
@@ -21,7 +20,7 @@ namespace FastFood.Forms
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            viewAccount.DataSource = getDataBLL.GetAccount();
+          
         }
     }
 }

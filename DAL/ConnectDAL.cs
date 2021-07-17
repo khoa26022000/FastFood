@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using DAL.QLFOODTableAdapters;
-using System.Linq;
+
 
 namespace DAL
 {
@@ -20,6 +20,20 @@ namespace DAL
 
         public DataTable GetDataAccount() {
             return daAccount.GetData();
+        }
+        public DataTable GetDataTableFood()
+        {
+            return daTableFood.GetData();
+        }
+        public int GetDataBill(int id)
+        {
+            DataTable data= daBill.GetDataByIdTable(id);
+            if (data.Rows.Count > 0)
+            {
+                Bill bill = new Bill(data.Rows[0]);
+                return bill.ID;
+            }
+            return -1;
         }
     }
 

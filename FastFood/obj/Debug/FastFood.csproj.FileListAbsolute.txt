@@ -11,7 +11,5 @@ D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastF
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastFood.FormLogin.resources
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastFood.Forms.FormAccountProfile.resources
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastFood.Forms.Admin.resources
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\bin\Debug\BLL.dll
-D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\bin\Debug\BLL.pdb
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\bin\Debug\DAL.dll
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\bin\Debug\DAL.pdb
