@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,43 @@ namespace FastFood
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        private string _MADN;
+        private string _TenDN;
+        public string _DisName;
+        public string _Type;
+        ConnectDAL getData = new ConnectDAL();
+        public string TenDN
+        {
+            get { return _TenDN; }
+            set { _TenDN = value; }
+        }
+        public string DisName
+        {
+            get { return _DisName; }
+            set { _DisName = value; }
+        }
+        public string Type
+        {
+            get { return _Type; }
+            set { _Type = value; }
+        }
+        public string MADN
+        {
+            get { return _MADN; }
+            set { _MADN = value; }
+        }
+        private void pq()
+        {
+          
+                if (MADN!="" && Type=="0")
+                {
+                    btnSetting.Enabled = false;
+                }
+                if (MADN != "" && Type == "-1")
+                {
+                    btnSetting.Enabled = true;
+                }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -161,6 +199,24 @@ namespace FastFood
         private void btnSetting_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Admin(), sender);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pq();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MADN = "";
+            if (Program.loginForm == null || Program.loginForm.IsDisposed)
+            {
+                Program.loginForm = new FormLogin();
+            }
+            this.Visible = false;
+            this.Close();
+            Program.loginForm.UserID = MADN;
+            Program.loginForm.Show();
         }
     }
 }

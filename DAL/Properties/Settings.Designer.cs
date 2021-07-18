@@ -26,7 +26,7 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=KHOA\\SQLEXPRESS;Initial Catalog=QL_FOOD;User ID=sa;Password=sa2012")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=QL_FOOD;User ID=sa;Password=Qlk@123456")]
         public string QL_FOODConnectionString {
             get {
                 return ((string)(this["QL_FOODConnectionString"]));

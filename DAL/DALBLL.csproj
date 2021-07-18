@@ -49,6 +49,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="QLFOOD.cs">
+      <DependentUpon>QLFOOD.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="QLFOOD.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

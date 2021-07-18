@@ -13,3 +13,19 @@ D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastF
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastFood.Forms.Admin.resources
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\bin\Debug\DAL.dll
 D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\bin\Debug\DAL.pdb
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.exe
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.pdb
+D:\luu\De Tai\FastFood\FastFood\bin\Debug\FastFood.exe
+D:\luu\De Tai\FastFood\FastFood\bin\Debug\FastFood.pdb
+D:\luu\De Tai\FastFood\FastFood\bin\Debug\DAL.dll
+D:\luu\De Tai\FastFood\FastFood\bin\Debug\DAL.pdb
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.csprojResolveAssemblyReference.cache
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Form1.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.FormLogin.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.Admin.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.FormAccountProfile.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.FormOrder.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.FormProduct.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Properties.Resources.resources
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.csproj.GenerateResource.Cache
+D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.Register.resources
