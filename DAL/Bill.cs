@@ -19,8 +19,13 @@ namespace DAL
         public Bill(DataRow row)
         {
             this.ID = (int )row["id"];
-            this.DateCheckIn = (DateTime? )row["dateCheckIn"];
-            this.DateCheckOut =(DateTime? )row["dateCheckOut"];
+            this.DateCheckIn = (DateTime? )row["DateCheckin"];
+            var dateCheckOutTemp = row["DateCheckout"];
+            if (dateCheckOutTemp.ToString() != "")
+            {
+                this.DateCheckOut = (DateTime?)dateCheckOutTemp;
+            }
+        
             this.Status = (int )row["status"];
         }
 
