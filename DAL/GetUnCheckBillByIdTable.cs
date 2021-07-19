@@ -22,6 +22,10 @@ namespace DAL
             }
             return -1;
         }
+        //public DataTable insertBill(DateTime dateCheckIn, DateTime dateCheckOut, int id, int status)
+        //{
+        //    return daBill.Insert(dateIn,dateOut,id,status);
+        //}
 
     }
 }

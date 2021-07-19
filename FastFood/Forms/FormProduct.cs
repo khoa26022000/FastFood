@@ -16,11 +16,14 @@ namespace FastFood.Forms
         GetDataTableFood getData = new GetDataTableFood();
         GetUnCheckBillByIdTable getBil = new GetUnCheckBillByIdTable();
         BillInfoDB getBillInfo = new BillInfoDB();
+        CategoryDB category = new CategoryDB();
         MenuDAL getMenu = new MenuDAL();
+        FoodDB food = new FoodDB();
         public FormProduct()
         {
             InitializeComponent();
             loadTable();
+            loadCategory(); 
         }
         void loadTable()
         {
@@ -71,9 +74,20 @@ namespace FastFood.Forms
             }
             txtTotalPrice.Text = totalPrice.ToString("c", culute);
         }
+        void loadCategory()
+        {
+            cbCategory.DataSource = category.GetCategoryFood();
+            cbCategory.DisplayMember = "name";
+            cbCategory.ValueMember = "id";
+        }
+        void loadFood_ByIDCategory(int id)
+        {
+ 
+        }
         private void btn_Click(object sender, EventArgs e)
         {
             int tableID = ((sender as Button).Tag as Table).ID;
+            lsvBill.Tag = (sender as Button).Tag;
             showBill(tableID);
         }
 
@@ -87,6 +101,19 @@ namespace FastFood.Forms
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id = (int)cbCategory.SelectedValue;
+            cbFood.DataSource=food.GetFoodId(id);
+            cbFood.DisplayMember = "name";
+            cbFood.ValueMember = "id";
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
         {
 
         }
