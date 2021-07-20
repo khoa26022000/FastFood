@@ -25,7 +25,6 @@ namespace FastFood.Forms
         {
             loadCombobox();
             loadComboboxTypeAccount();
-            dataGVdoanhThu.DataSource = data.GetDataDoanhThu("1000-1-1", "3000-1-1"); 
         }
         public void loadLv()
         {
@@ -206,7 +205,7 @@ namespace FastFood.Forms
 
         private void viewAccount_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox9.Text = viewAccount.SelectedRows[0].Cells[0].Value.ToString(); ;
+            textBox9.Text = viewAccount.SelectedRows[0].Cells[0].Value.ToString(); 
             textBox8.Text = viewAccount.SelectedRows[0].Cells[1].Value.ToString();
             comboBox3.SelectedValue = viewAccount.SelectedRows[0].Cells[2].Value;
         }
@@ -254,7 +253,7 @@ namespace FastFood.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            loadDoanhThu();
+            loadDoanhThu();//cai checkout cua t là null nha chắc sai chỗ đó xme lại xem
         }
     }
 

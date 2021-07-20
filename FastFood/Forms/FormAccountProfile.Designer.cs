@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTenDN = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTenHienThi = new System.Windows.Forms.TextBox();
+            this.txtMK = new System.Windows.Forms.TextBox();
+            this.txtNewMK = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,54 +52,45 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Tên đăng nhập:";
             // 
-            // textBox2
+            // txtTenDN
             // 
-            this.textBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Equation;
-            this.textBox2.Location = new System.Drawing.Point(428, 118);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(293, 25);
-            this.textBox2.TabIndex = 5;
+            this.txtTenDN.AccessibleRole = System.Windows.Forms.AccessibleRole.Equation;
+            this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDN.Location = new System.Drawing.Point(428, 118);
+            this.txtTenDN.Multiline = true;
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.ReadOnly = true;
+            this.txtTenDN.Size = new System.Drawing.Size(293, 25);
+            this.txtTenDN.TabIndex = 5;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.txtNewMK);
+            this.panel3.Controls.Add(this.txtMK);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox6);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textBox4);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtTenHienThi);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtTenDN);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(953, 571);
             this.panel3.TabIndex = 1;
             // 
-            // label3
+            // button1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(259, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Tên hiển thị:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(428, 167);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(293, 25);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.Location = new System.Drawing.Point(575, 332);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 56);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Cập nhật";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -114,15 +103,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Mật khẩu mới:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(428, 270);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 25);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.UseSystemPasswordChar = true;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -134,43 +114,45 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Mật khẩu:";
             // 
-            // textBox4
+            // label3
             // 
-            this.textBox4.Location = new System.Drawing.Point(428, 221);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(293, 25);
-            this.textBox4.TabIndex = 9;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(259, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Tên hiển thị:";
             // 
-            // label6
+            // txtTenHienThi
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(259, 321);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 25);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Nhập lại:";
+            this.txtTenHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenHienThi.Location = new System.Drawing.Point(428, 167);
+            this.txtTenHienThi.Multiline = true;
+            this.txtTenHienThi.Name = "txtTenHienThi";
+            this.txtTenHienThi.Size = new System.Drawing.Size(293, 25);
+            this.txtTenHienThi.TabIndex = 4;
             // 
-            // textBox6
+            // txtMK
             // 
-            this.textBox6.Location = new System.Drawing.Point(428, 321);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(293, 25);
-            this.textBox6.TabIndex = 13;
+            this.txtMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMK.Location = new System.Drawing.Point(428, 225);
+            this.txtMK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.PasswordChar = '*';
+            this.txtMK.Size = new System.Drawing.Size(293, 27);
+            this.txtMK.TabIndex = 16;
             // 
-            // button1
+            // txtNewMK
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(575, 373);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 56);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Cập nhật";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtNewMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewMK.Location = new System.Drawing.Point(428, 274);
+            this.txtNewMK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNewMK.Name = "txtNewMK";
+            this.txtNewMK.PasswordChar = '*';
+            this.txtNewMK.Size = new System.Drawing.Size(293, 27);
+            this.txtNewMK.TabIndex = 17;
             // 
             // FormAccountProfile
             // 
@@ -190,16 +172,14 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTenDN;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtTenHienThi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtNewMK;
+        private System.Windows.Forms.TextBox txtMK;
     }
 }

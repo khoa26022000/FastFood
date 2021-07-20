@@ -90,6 +90,7 @@ namespace FastFood
         private void button1_Click_1(object sender, EventArgs e)
         {
             getTypeUser(textBox2.Text, textBox3.Text);
+            
         }
 
         private void button2_Click_1(object sender, EventArgs e)

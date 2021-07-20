@@ -132,14 +132,14 @@ namespace FastFood
             childForm.Show();
             lbTitle.Text = childForm.Text;
         }
-        private void btnProducts_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormProduct(), sender);
-        }
+        //private void btnProducts_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new Forms.FormProduct(), sender);
+        //}
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormOrder(), sender);
+            OpenChildForm(new Forms.FormProduct(), sender);
         }
 
         private void btnClosePanelChild_Click(object sender, EventArgs e)
@@ -193,7 +193,8 @@ namespace FastFood
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormAccountProfile(), sender);
+            Account loginAccount = getData.GetUser1(MADN);
+            OpenChildForm(new Forms.FormAccountProfile(loginAccount), sender);
         }
 
         private void btnSetting_Click(object sender, EventArgs e)

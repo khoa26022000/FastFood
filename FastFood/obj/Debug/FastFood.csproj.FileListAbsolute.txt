@@ -29,3 +29,4 @@ D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.FormProduct.resources
 D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Properties.Resources.resources
 D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.csproj.GenerateResource.Cache
 D:\luu\De Tai\FastFood\FastFood\obj\Debug\FastFood.Forms.Register.resources
+D:\BaiTap\PhatTrienPhamMenThongMinh\DoAnCuoiKy\FastFood\FastFood\obj\Debug\FastFood.Forms.Register.resources

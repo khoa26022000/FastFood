@@ -102,10 +102,23 @@ namespace DAL
         {
             return daAccount.GetDataBy5(userName);
         }
-        //Bill
-          public DataTable GetDataDoanhThu(string inc,string ino)
+        public Account GetUser1(string userName)
         {
-            return dataBilladap.GetData(inc,ino);
+            DataTable data = daAccount.GetDataBy6(userName);
+            foreach (DataRow item in data.Rows)
+            {
+                return new Account(item);
+            }
+            return null;
+        }
+        public void updateProfile(string displayname,string password,string username)
+        {
+            daAccount.UpdateQuery(displayname, password, username);
+        }
+        //Bill
+          public DataTable GetDataDoanhThu(string inc,string outc)
+        {
+            return dataBilladap.GetData(inc,outc);
         }
         public int GetDataBill(int id)
         {
@@ -116,6 +129,14 @@ namespace DAL
                 return bill.ID;
             }
             return -1;
+        }
+        public DataTable getCategory()
+        {
+            return daFoodCategory.GetData();
+        }
+        public DataTable getFoodByIdCate(int id)
+        {
+            return daFood.GetDataByIdCategory(id);
         }
     }
 
